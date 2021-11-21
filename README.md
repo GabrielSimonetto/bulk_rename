@@ -14,8 +14,8 @@ input_abacaxi.txt  output_abacaxi.txt  intermediary_abacaxi.txt
 $ cargo run ./ "*_abacaxi.txt" "*_bolovo.txt"
 
 $ ls
-input_abacaxi.txt  input_bolovo.txt  intermediary_abacaxi.txt  
-intermediary_bolovo.txt  output_abacaxi.txt  output_bolovo.txt
+input_abacaxi.txt  output_abacaxi.txt  intermediary_abacaxi.txt  
+input_bolovo.txt  output_bolovo.txt  intermediary_bolovo.txt
 ```
 
 And voilá! Now you have input, intermediary, and output for `bolovo`, that you copied from `abacaxi`.
