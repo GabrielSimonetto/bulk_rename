@@ -8,19 +8,19 @@ Although the name is bulk_rename, I've just implemented the copy method for now 
 # Basic Usage:
 
 ```bash
-cargo run ./test_inputs/star_copy_test_1/ *_abacaxi.txt *_bolovo.txt
-```
+$ ls
+input_abacaxi.txt  output_abacaxi.txt  intermediary_abacaxi.txt
 
-Or, if you are on the same directory, you need to use quotes to prevent your shell from expanding the arguments
+$ cargo run ./ "*_abacaxi.txt" "*_bolovo.txt"
 
-```bash
-cargo run ./ "*_abacaxi.txt" "*_bolovo.txt"
+$ ls
+input_abacaxi.txt  input_bolovo.txt  intermediary_abacaxi.txt  
+intermediary_bolovo.txt  output_abacaxi.txt  output_bolovo.txt
 ```
 
 And voilá! Now you have input, intermediary, and output for `bolovo`, that you copied from `abacaxi`.
 
 For development I am just using script_test_1.sh while I think how the hell am I gonna test this.
-
 
 
 # TODO
