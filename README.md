@@ -11,9 +11,17 @@ Although the name is bulk_rename, I've just implemented the copy method for now 
 cargo run ./test_inputs/star_copy_test_1/ *_abacaxi.txt *_bolovo.txt
 ```
 
+Or, if you are on the same directory, you need to use quotes to prevent your shell from expanding the arguments
+
+```bash
+cargo run ./ "*_abacaxi.txt" "*_bolovo.txt"
+```
+
 And voilá! Now you have input, intermediary, and output for `bolovo`, that you copied from `abacaxi`.
 
 For development I am just using script_test_1.sh while I think how the hell am I gonna test this.
+
+
 
 # TODO
 - [ ] - Allow patterns with different positionings (e.g.: `*_abacaxi.txt` -> `cenouras_*.txt`)
